@@ -1,0 +1,30 @@
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: minmax(8rem, max-content) repeat(auto-fill, 8rem);
+  margin: 1rem;
+
+  gap: 1rem;
+  //   grid-row: 20px;
+  .card {
+    // border: 2px solid rgb(32, 91, 11);
+    min-width: 8rem;
+    min-height: 5rem;
+    text-align: center;
+    .job-card {
+      width: 70px;
+      height: 80px;
+      box-shadow: 20px 0px 20px 6px #e6e6e6;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0px 0px 25px 0;
+      margin: 1rem auto;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    //   padding: 10px;
+      color: rgb(13, 100, 13);
+      font-size: 1.8rem;
+      font-weight: bolder;
+    }
+  }
+}

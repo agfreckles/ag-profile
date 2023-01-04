@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* font-family: 'KoHo', sans-serif; */
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
+}
+ul,
+li {
+  list-style: none;
+}
+
+// Helpers
+
+.h2-italics {
+  /* margin-left: 160px; */
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 900;
+  color: #96602b;
+}
+.h2-bold {
+  // font-family: "Rajdhani";
+  font-family: 'Courier New', Courier, monospace;
+
+  font-weight: 900;
+  color: #674625;
+  // @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  /* color: #473829; */
+}
+a {
+  text-decoration: none;
+  color: #888888;
+  font-weight: 2rem;
+}
+.p {
+  padding: 6% 20% 0 17%;
+}
