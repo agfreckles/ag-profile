@@ -1,22 +1,22 @@
 .projects-wrapper {
   display: grid;
   grid-template-columns: minmax(8rem, max-content) repeat(auto-fill, 8rem);
-  margin: 1rem;
+  margin: 1rem 0.9rem;
 
   gap: 1rem;
-  //   grid-row: 20px;
+//   border: 1px solid red;
   .card {
     // border: 2px solid rgb(32, 91, 11);
     min-width: 8rem;
     min-height: 5rem;
-    text-align: center;
+    // text-align: center;
     .job-card {
       width: 70px;
       height: 80px;
       box-shadow: 20px 0px 20px 6px #e6e6e6;
       background-color: rgb(255, 255, 255);
       border-radius: 0px 0px 25px 0;
-      margin: 1rem auto;
+      margin: 1rem 0;
 
       display: flex;
       flex-direction: row;

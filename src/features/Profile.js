@@ -55,7 +55,7 @@ const Profile = () => {
           I'm a mathematician with love for software engineering and currently a
           certified solutions architect associate at AWS®.
         </p>
-        <div className="parent-row-flex">
+        <div className="buttons-parent">
           <a
             href="https://youtu.be/5Zr0JDk1nJ4"
             target="iframe_a"
