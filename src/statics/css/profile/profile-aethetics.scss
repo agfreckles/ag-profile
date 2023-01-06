@@ -1,7 +1,7 @@
 @import "../helpers";
 .main-nav {
   margin: 0.4rem 0.2rem;
-  
+
   ul {
     display: flex;
     justify-content: space-around;
@@ -11,12 +11,19 @@
     font-weight: bold;
     transition: all 0.4s;
   }
+  li {
+    transition: all .6s;
+  }
 
+  li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #420808;
+  }
 }
 .main-head {
   margin: 1em 0.2em;
   text-align: center;
-
 }
 .image-frame {
   background-color: #fedcdc;
@@ -25,7 +32,6 @@
   padding: 0.8em;
   z-index: 1;
   display: flex;
-  // align-items: center;
   justify-content: space-evenly;
 
   img {
@@ -41,7 +47,6 @@
   }
 
   .media {
-
     // border: 1px solid red;
     color: white;
 
@@ -65,7 +70,7 @@
 
   //   width: 70%;
   min-height: 100%;
-  padding: 10%;
+  padding: 2%;
 
   background-color: #f7f7f7;
   border-radius: 2px 0px 75px 0;

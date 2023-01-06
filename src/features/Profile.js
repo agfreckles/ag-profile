@@ -3,6 +3,7 @@ import ag from "../statics/images/ag.jpg";
 import "../statics/css/profile/profile-grid.scss";
 import "../statics/css/profile/profile-aethetics.scss";
 import Projects from "./Projects";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
@@ -10,17 +11,18 @@ const Profile = () => {
       <nav className="main-nav">
         <ul>
           <li>
-            <span>
+            <Link to="/">
               <i className="zmdi zmdi-home"></i>
-            </span>
+            </Link>
           </li>
-          <li>
+          <Link to="/resume">
             <span>Resume</span>
-          </li>
+          </Link>
           <li>
-            <span>
-              <i className="zmdi zmdi-phone"></i>
-            </span>
+            <Link to="/certifications">
+              {/* <i className="zmdi zmdi-book"></i> */}
+              <span>Certifications</span>
+            </Link>
           </li>
           <li>
             <span>Works</span>
@@ -28,7 +30,7 @@ const Profile = () => {
         </ul>
       </nav>
       <section className="image-frame">
-        <img src={ag} alt="picture of frank" />
+        <img src={ag} alt="frank" />
         <span className="media">
           <ul>
             <li>

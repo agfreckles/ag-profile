@@ -1,0 +1,121 @@
+@import "./variables";
+.cv-wrapper {
+  font-family: $font-stack-1;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin: 3em auto;
+  width: 97%;
+  border: 1px solid rgb(44, 27, 3);
+  border-radius: 0.5rem;
+
+  .profile-section,
+  .info-section {
+    // border: 1px solid red;
+  }
+
+  .profile-section {
+    background-color: $profile-section-background-1;
+    color: $profile-section-color-1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    img {
+      width: 7rem;
+      height: 8rem;
+      border-radius: 1rem;
+      margin: 3.55rem auto;
+    }
+    .category {
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      h4 {
+        border-bottom: 2px solid rgb(195, 201, 211);
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+        padding-bottom: 0.3rem;
+      }
+      span {
+        margin-top: 1rem;
+        padding-right: 0.5rem;
+
+        p {
+          font-size: x-small;
+          margin-top: 0.4rem;
+        }
+      }
+      ul > li {
+        list-style: square;
+        font-weight: 100;
+        font-size: 0.9rem;
+        color: rgb(214, 220, 221);
+        margin: 0.7rem;
+      }
+    }
+  }
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    margin: 1rem;
+
+    font-family: $font-stack-2;
+    h3 {
+      font-family: $font-family-PT-Sans;
+      font-weight: 400;
+      font-size: 3rem;
+      span {
+        color: rgb(43, 43, 63);
+        // font-weight: 900;
+      }
+    }
+    h4 {
+      font-weight: 300;
+      color: rgb(7, 13, 13);
+      margin: 0 0 1rem 0;
+    }
+    p {
+    }
+
+    h2 {
+      color: rgb(61, 60, 60);
+      margin: 1.5rem 0 0.5rem 0;
+      font-weight: bolder;
+    }
+    .experience {
+      display: flex;
+      flex-direction: column;
+      border-top: 2px solid rgb(183, 188, 186);
+      .experience-box {
+        // border-left: 3px dotted rgb(178, 178, 178);
+        border-left: 4mm ridge rgba(20, 95, 47, 0.6);
+        margin: 1rem;
+        padding: 1rem;
+
+        li {
+          list-style: square;
+          margin: 1rem;
+        }
+      }
+    }
+    hr {
+      border: 2px solid red;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .cv-wrapper {
+    width: 100%;
+    font-size: xx-small;
+  }
+}
+
+@media (min-width: 700px) {
+  .cv-wrapper {
+    width: 70%;
+  }
+}
