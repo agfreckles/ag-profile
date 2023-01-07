@@ -10,9 +10,6 @@ const App = () => {
   return (
     <main>
       <BrowserRouter history={history}>
-        <Link to="/">
-          <i className="zmdi zmdi-arrow-back"></i> back
-        </Link>
         <Routes>
           <Route path="/" exact element={<Profile />}></Route>
           <Route path="/resume" element={<Resume />}></Route>

@@ -17,7 +17,7 @@ const Certificate = () => {
   });
   return (
     <div className="pdf-doc-wrapper">
-      <Document file={csa} onLoadSuccess={onDocumentLoadSuccess}>
+      <Document file={csa} onLoadSuccess={onDocumentLoadSuccess} id="doc">
         <Page pageNumber={pageNumber} />
       </Document>
       {/* <p>

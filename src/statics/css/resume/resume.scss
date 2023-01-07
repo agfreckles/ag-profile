@@ -2,7 +2,7 @@
 .cv-wrapper {
   font-family: $font-stack-1;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  // grid-template-columns: 2fr 3fr;
   margin: 3em auto;
   width: 97%;
   border: 1px solid rgb(44, 27, 3);
@@ -107,15 +107,32 @@
     }
   }
 }
-@media (max-width: 700px) {
+// @media (max-width: 700px) {
+//   .cv-wrapper {
+//     width: 100%;
+//     font-size: xx-small;
+//   }
+// }
+@media (min-width: 300px) and (max-width: 600px) {
   .cv-wrapper {
+    margin-top: 0;
     width: 100%;
     font-size: xx-small;
+    grid-template-columns: repeat(1fr, 1fr);
+    // border: 1px ridge red;
+
+    .profile-section {
+      .category {
+        width: 96%;
+        // margin: 1rem 1rem;
+      }
+    }
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .cv-wrapper {
     width: 70%;
+  grid-template-columns: 2fr 3fr;
   }
 }
